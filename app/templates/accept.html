@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV Generator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <h1 class="text-center mb-4">
+            CV Generator
+        </h1>
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            <label>Name</label>
+            <input type="text" class="form-control" name="name">
+
+            <br>
+
+            <label>Email</label>
+            <input type="email" class="form-control" name="email">
+
+            <br>
+
+            <label>Mobile</label>
+            <input type="text" class="form-control" name="mobile">
+
+            <br>
+
+            <label>Degree</label>
+            <input type="text" class="form-control" name="degree">
+
+            <br>
+
+            <label>About</label>
+            <textarea class="form-control" name="about"></textarea>
+
+            <br>
+
+            <label>University</label>
+            <input type="text" class="form-control" name="university">
+
+            <br>
+
+            <label>School</label>
+            <input type="text" class="form-control" name="school">
+
+            <br>
+
+            <label>Previous Work</label>
+            <input type="text" class="form-control" name="previous_work">
+
+            <br>
+
+            <label>Skills</label>
+            <input type="text" class="form-control" name="skills">
+
+            <br>
+
+            <button type="submit" class="btn btn-primary w-100">
+
+                Submit
+
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
