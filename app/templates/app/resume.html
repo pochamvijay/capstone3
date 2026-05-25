@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Resume</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .resume{
+
+            width: 700px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1{
+            color: darkblue;
+        }
+
+        h2{
+            color: darkred;
+            border-bottom: 2px solid gray;
+        }
+
+        button{
+
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="resume">
+
+        <h1>{{ user_profile.name }}</h1>
+
+        <p><b>Email:</b> {{ user_profile.email }}</p>
+
+        <p><b>Mobile:</b> {{ user_profile.mobile }}</p>
+
+        <hr>
+
+        <h2>Career Objective</h2>
+
+        <p>{{ user_profile.about }}</p>
+
+        <h2>Education</h2>
+
+        <p>{{ user_profile.degree }}</p>
+
+        <p>{{ user_profile.university }}</p>
+
+        <p>{{ user_profile.school }}</p>
+
+        <h2>Previous Work</h2>
+
+        <p>{{ user_profile.previous_work }}</p>
+
+        <h2>Skills</h2>
+
+        <p>{{ user_profile.skills }}</p>
+
+        <br><br>
+
+        <button onclick="window.print()">
+
+            Download Resume
+
+        </button>
+
+    </div>
+
+</body>
+
+</html>
