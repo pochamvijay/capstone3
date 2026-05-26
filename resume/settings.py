@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%zw$e3d4rtf((&w+zvx90!cdyw2a2504d$8r3++r-552^-!br1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = [
-    'vijaybabu2.pythonanywhere.com',
+   'pvijay3.pythonanywhere.com',
     '127.0.0.1',
     'localhost'
 ]
@@ -118,3 +118,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+# Static files (CSS, JavaScript, Images)
+
+
+STATIC_ROOT = '/home/pvijay3/capstone4/static'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
